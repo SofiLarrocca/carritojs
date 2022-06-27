@@ -1,0 +1,16 @@
+.title-index { 
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    transition: ease-in-out;
+    animation: toDown 3s linear;
+}
+
+    @keyframes toDown {
+    0% {
+    transform: translate3d(0, -300px, 0);
+    }
+    100% { 
+        transform: none;
+    }
+    } 

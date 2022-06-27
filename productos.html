@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,500;8..144,800&display=swap" rel="stylesheet">
+     
+    <!-- BOOSTRAP ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-productos">
+    <nav>
+        <div class="container_nav">
+            <div>
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <div id="cart">
+                <div id="contador-cart">0</div>
+                <i id="bi-cart" class="bi bi-cart2"></i>
+            </div>
+        </div>
+
+        <button class="btn" id="btnFinalizar">Finalizar Compra</button>
+    </nav>    
+    
+    <!-- Carrito Compras -->
+    <div class='none' id="container-cart">
+        
+    </div>
+
+    <p class="prod-titulo">NUESTROS PRODUCTOS</p>
+    <div id="container-productos">
+
+    </div>
+
+
+    <!-- FORMULARIO CONTACTO -->
+    <div class='none' id="formulario">
+        <div class="formulario">
+            <div class="formulario_text">      
+            <form>       
+                <p>
+                    <label for="nombre">Nombre y Apellido
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" id="nombre"   placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" id="email"  placeholder="Escribe tu Email">
+                </p>
+                <p>
+                    <label for="telefone">Teléfono
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="tel" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+                
+                <div id="cart-formulario">
+                    
+                </div>
+
+                <button class="btn" type="submit" name="enviar_formulario" id="enviar">FINALIZAR COMPRA</button>
+                <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            </form>
+        </div>
+        
+        <i class="bi bi-x"></i>
+    </div>
+</div>
+
+    <footer id="footer"></footer>
+    
+    
+    <script src="productos.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
