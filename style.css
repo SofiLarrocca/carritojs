@@ -53,18 +53,23 @@ nav {
 }
 
 #btnFinalizar { 
-    margin-right: 7rem;
+    margin-left: 0.5rem;
     display: none;
 }
 
 .container_nav { 
-    width: 75%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
+}
+
+.nav-iconos { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav div img { 
@@ -165,10 +170,9 @@ nav div img {
 .prod-titulo { 
     text-align: center;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 500;
     letter-spacing: 0.5rem;
     margin: 4rem 0;
-
 }
 
 #container-productos { 
@@ -282,3 +286,36 @@ nav div img {
     text-transform: uppercase;
     font-weight: 800;
   }
+
+
+
+
+/* MEDIA QUERYES */
+
+@media (max-width: 700px) { 
+    #container-cart { 
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+    
+    .card { 
+        padding: 0.7rem;
+    }
+
+    .img-card { 
+        max-width: 10rem;
+    }
+
+    .card h3 { 
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .card h4, p{ 
+        font-weight: 100;
+        font-size: 0.9rem;
+    }
+    .formulario .formulario_text {
+        width: 100%;
+    }
+}
